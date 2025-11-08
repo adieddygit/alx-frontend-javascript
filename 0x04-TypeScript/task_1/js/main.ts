@@ -47,3 +47,10 @@ const director1: Directors = {
   numberOfReports: 17,
 };
 console.log(director1);
+
+// 3. Printing teachers
+ function printTeacher(firstName:string, lastName:string){
+    return firstName.slice(0,1) + '.' +' '+ lastName // It returns the first letter of the firstName and the full lastName
+ }
+ console.log(printTeacher("John", "Doe")) 
+ 
