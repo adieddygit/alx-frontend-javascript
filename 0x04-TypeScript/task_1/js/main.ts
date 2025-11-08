@@ -1,5 +1,4 @@
-
- //  1. Building a Teacher interface
+//  1. Building a Teacher interface
 interface Teacher {
     readonly firstName: string, // modifiable only after initialized
     readonly lastName: string, // modifiable only after initialized
