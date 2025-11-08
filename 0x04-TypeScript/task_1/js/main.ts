@@ -32,3 +32,18 @@ const teacher4: Teacher = {
 };
 
 console.log(teacher3);
+
+// 2. Extending the Teacher class
+interface Directors extends Teacher {
+    numberOfReports: number // this extends the Teacher class for Directors objects created
+};
+
+// Example 3
+const director1: Directors = {
+  firstName: "John",
+  lastName: "Doe",
+  location: "London",
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+console.log(director1);
