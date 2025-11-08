@@ -51,3 +51,18 @@ function createEmployee(salary: number | string): Director | Teacher{
 console.log(createEmployee(200)); // Teacher
 console.log(createEmployee(1000)); // Director
 console.log(createEmployee('$500')); // Director
+
+// 7. String literal types 
+type Subjects = Math | History;
+
+function teachClass(todayClass: string){
+    if(todayClass === "Math"){
+        return "Teaching Math";
+    }else{
+        return "Teaching History";
+    }
+}
+
+// Example 3
+console.log(teachClass('Math')); // Teaching Math
+console.log(teachClass('History')); // Teaching History
